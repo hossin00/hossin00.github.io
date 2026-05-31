@@ -1,0 +1,44 @@
+[
+  {
+    "name": "FPS Max AI: GFX Booster",
+    "package": "com.fpsmax.ai",
+    "icon": "🎮",
+    "description": "AI gaming performance dashboard. GFX presets, FPS readiness, lag fix, thermal guard and ping stability.",
+    "color": "#0a1a2a"
+  },
+  {
+    "name": "Sensi GFX: Game Booster", 
+    "package": "com.sensigfx.gamebooster",
+    "icon": "🎯",
+    "description": "Gaming sensitivity coach. GFX presets, lag fix, HUD layouts and training academy.",
+    "color": "#1a0a2e"
+  },
+  {
+    "name": "Bible Verse AI: Prayer",
+    "package": "com.bibleverseai.prayer", 
+    "icon": "📖",
+    "description": "Daily Bible habit app. Verse of the day, prayer alarms, AI Bible study and audio.",
+    "color": "#0e1320"
+  },
+  {
+    "name": "Pro Baseball AI Coach 2026",
+    "package": "com.probaseballai.coach",
+    "icon": "⚾",
+    "description": "AI-powered baseball strategy companion. Lineup optimizer and player database.",
+    "color": "#1a1a0a"
+  },
+  {
+    "name": "Mods Master for Minecraft",
+    "package": "com.modsmaster.minecraft",
+    "icon": "🎮",
+    "description": "Ultimate Minecraft companion. Mods browser, seeds, builds and AI tips.",
+    "color": "#1a0a0a"
+  },
+  {
+    "name": "ToonVerse AI",
+    "package": "com.toonverse.ai",
+    "icon": "🎨",
+    "description": "Premium manga and webtoon platform. Original stories and AI studio.",
+    "color": "#1a0a1a"
+  }
+]

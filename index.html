@@ -1,8 +1,61 @@
 ﻿<!DOCTYPE html>
-<html>
-<head><title>Developer Page</title></head>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile Apps Developer</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#0a0a0f;color:#fff;min-height:100vh}
+header{background:#111;border-bottom:1px solid #222;padding:20px 40px}
+header h1{font-size:22px;color:#00ffd1}
+header p{font-size:13px;color:#888;margin-top:4px}
+.hero{text-align:center;padding:50px 20px 30px}
+.hero h2{font-size:28px;margin-bottom:10px}
+.hero p{color:#aaa;font-size:15px}
+.apps{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;padding:20px 40px 60px;max-width:1100px;margin:0 auto}
+.card{background:#111;border:1px solid #222;border-radius:12px;padding:24px}
+.card-header{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.icon{width:48px;height:48px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:22px}
+.card h3{font-size:15px;font-weight:600}
+.card small{color:#888;font-size:11px}
+.card p{font-size:13px;color:#888;line-height:1.6;margin-bottom:12px}
+.badge{display:inline-block;font-size:11px;padding:3px 10px;border-radius:20px;background:#1a2a1a;color:#00ff88;border:1px solid #00ff8833}
+footer{text-align:center;padding:30px;color:#555;font-size:13px;border-top:1px solid #1a1a1a}
+a{color:#00ffd1;text-decoration:none}
+</style>
+</head>
 <body>
-<h1>Mobile App Developer</h1>
-<p>This is the official developer page for our mobile apps.</p>
+<header>
+<h1>Mobile Apps Developer</h1>
+<p>Independent Android app developer — Google Play Publisher</p>
+</header>
+<div class="hero">
+<h2>Our Mobile Applications</h2>
+<p>Premium Android apps available on Google Play.</p>
+</div>
+<div class="apps" id="apps-grid"></div>
+<footer>
+<p>Independent Android Developer &nbsp;|&nbsp; <a href="/app-ads.txt">app-ads.txt</a></p>
+<p style="margin-top:8px">For support, contact us through Google Play Console.</p>
+</footer>
+<script>
+fetch('/apps.json')
+.then(r=>r.json())
+.then(apps=>{
+const grid=document.getElementById('apps-grid');
+apps.forEach(app=>{
+grid.innerHTML+=`
+<div class="card">
+<div class="card-header">
+<div class="icon" style="background:${app.color}">${app.icon}</div>
+<div><h3>${app.name}</h3><small>${app.package}</small></div>
+</div>
+<p>${app.description}</p>
+<span class="badge">Google Play</span>
+</div>`;
+});
+});
+</script>
 </body>
 </html>
