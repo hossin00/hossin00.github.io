@@ -41,4 +41,11 @@
     "description": "Premium manga and webtoon platform. Original stories and AI studio.",
     "color": "#1a0a1a"
   }
+,{
+  "name": "Sensi AI: GFX Tool",
+  "package": "com.sensiai.gfxtool",
+  "icon": "🎯",
+  "description": "Sensitivity, HUD, GFX settings and control presets for mobile gamers.",
+  "color": "#050812"
+}
 ]
